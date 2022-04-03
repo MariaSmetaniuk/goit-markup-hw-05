@@ -44,7 +44,7 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button button" type="button">Заказать услугу</button>
+            <button class="hero-button button" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- Особенности -->
         <section class="features section">
@@ -96,16 +96,22 @@
                 <h2 class="subtitle">Чем мы занимаемся</h2>
                 <ul class="activity-list list">
                     <li class="activity-item">
-                        <img class="activity-img" src="./images/box1.jpg" alt="Человек печатает на клавиатуре"
-                            width="370" height="294">
+                        <img class="activity-img" src="./images/box1.jpg" alt="Человек печатает на клавиатуре" width="370" height="294">
+                        <div class="activity-title-bg">
+                            <h3 class="activity-title">Десктопные приложения</h3>
+                        </div>
                     </li>
                     <li class="activity-item">
-                        <img class="activity-img" src="./images/box2.jpg" alt="Человек держит телефон" width="370"
-                            height="294">
+                        <img class="activity-img" src="./images/box2.jpg" alt="Человек держит телефон" width="370" height="294">
+                        <div class="activity-title-bg">
+                            <h3 class="activity-title">Мобильные приложения</h3>
+                        </div>
                     </li>
                     <li class="activity-item">
-                        <img class="activity-img" src="./images/box3.jpg" alt="Цветовая гамма на екране планшета"
-                            width="370" height="294">
+                        <img class="activity-img" src="./images/box3.jpg" alt="Цветовая гамма на екране планшета" width="370" height="294">
+                        <div class="activity-title-bg">
+                            <h3 class="activity-title">Дизайнерские решения</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -369,5 +375,16 @@
             </div>
         </div>
     </footer>
+     <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+            <button class="button modal-btn" type="button" data-modal-close>
+                <svg class="modal-close">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
